@@ -8,4 +8,4 @@ from pages.website import website_p3dge
 from pages.user import user_p3dge
 
 if __name__ == '__main__':
-    
+    chatbot_p3dge()
