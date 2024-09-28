@@ -28,8 +28,9 @@ def load_model():
     )
     return llm_chain
 
-def response_generator():
+def response_generator(user_input):
     # Gọi mô hình LLM để lấy phản hồi
+    user_input += ' dịch sang tiếng việt' 
     response = st.session_state['model'].invoke({"query": user_input})
     answer = response['result']
 
